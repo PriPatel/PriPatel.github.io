@@ -1,0 +1,105 @@
+body {
+  background-color: black;
+}
+
+.container {
+  width: 210px;
+  height: 140px;
+  position: relative;
+  perspective: 1000px;
+  margin: auto;
+  padding-top:100px;
+}
+
+#carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  border: black 2;
+}
+
+#carousel figure {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 30px;
+  top: 30px;
+}
+
+#carousel figure:nth-child(1) { transform: rotateY(   0deg ) translateZ( 288px ); }
+#carousel figure:nth-child(2) { transform: rotateY(  40deg ) translateZ( 288px ); }
+#carousel figure:nth-child(3) { transform: rotateY(  80deg ) translateZ( 288px ); }
+#carousel figure:nth-child(4) { transform: rotateY( 120deg ) translateZ( 288px ); }
+#carousel figure:nth-child(5) { transform: rotateY( 160deg ) translateZ( 288px ); }
+#carousel figure:nth-child(6) { transform: rotateY( 200deg ) translateZ( 288px ); }
+#carousel figure:nth-child(7) { transform: rotateY( 240deg ) translateZ( 288px ); }
+#carousel figure:nth-child(8) { transform: rotateY( 280deg ) translateZ( 288px ); }
+#carousel figure:nth-child(9) { transform: rotateY( 320deg ) translateZ( 288px ); }
+
+
+#carousel figure:nth-child(1) {
+  background-image: url('images/mum-01.png');
+  background-size: 200px 200px;
+}
+
+#carousel figure:nth-child(2) {
+  background-image: url('images/mum-02.png');
+  background-size: 200px 200px;
+}
+
+#carousel figure:nth-child(3) {
+  background-image: url('images/mum-03.png');
+  background-size: 200px 200px;
+}
+
+#carousel figure:nth-child(4) {
+  background-image: url('images/mum-04.png');
+  background-size: 200px 200px;
+}
+
+#carousel figure:nth-child(5) {
+  background-image: url('images/mum-05.png');
+  background-size: 200px 200px;
+}
+
+#carousel figure:nth-child(6) {
+  background-image: url('images/mum-06.png');
+  background-size: 200px 200px;
+}
+
+#carousel figure:nth-child(7) {
+  background-image: url('images/mum-07.png');
+  background-size: 200px 200px;
+}
+
+#carousel figure:nth-child(8) {
+  background-image: url('images/mum-08.png');
+  background-size: 200px 200px;
+}
+
+#carousel figure:nth-child(9) {
+  background-image: url('images/mum-09.png');
+  background-size: 200px 200px;
+}
+
+
+
+@keyframes spin {
+  from { transform: rotateY(0); }
+  to { transform: rotateY(360deg); }
+}
+
+#carousel {
+  animation: spin 2s infinite linear;
+}
+
+#heading {
+  font-family: arial;
+  color: red;
+  font-size: 100px;
+}
+
+
