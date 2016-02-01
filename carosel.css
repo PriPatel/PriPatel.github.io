@@ -93,7 +93,7 @@ body {
 }
 
 #carousel {
-  animation: spin 2s infinite linear;
+  animation: spin 10s infinite linear;
 }
 
 #heading {
